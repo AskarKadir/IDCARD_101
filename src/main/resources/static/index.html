@@ -8,17 +8,27 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            p{
+                display: inline-block;
+            }
+        </style>
     </head>
     <body>
         <form>
-            <p>Nama</p>
-            <input type="text" name="nama">
-            <p>Nama Panggilan</p>
-            <input type="text" name="namapanggilan">
-            <p>Tanggal Lahir</p>
-            <input type="date" name="tanggal">
-            <p>Foto</p>
-            <input type="file" name="foto">
+            <div class="label">
+                <p>Nama</p>
+                <p>Nama Panggilan</p>
+                <p>Tanggal Lahir</p>
+                <p>Foto</p>
+            </div>
+                
+            <div class="inputan">
+                <input type="text" name="nama">
+                <input type="text" name="namapanggilan">
+                <input type="date" name="tanggal">
+                <input type="file" name="foto">
+            </div>
         </form>
     </body>
 </html>
