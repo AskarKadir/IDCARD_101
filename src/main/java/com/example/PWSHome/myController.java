@@ -32,7 +32,7 @@ public class myController {
             Model model) throws 
             IOException, ParseException
     {
-        SimpleDateFormat formatter = new SimpleDateFormat("dd/M/yyyy");  
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");  
         String konvtgl = formatter.format(tanggal);
         
         String blob = Base64.encodeBase64String(file.getBytes());
