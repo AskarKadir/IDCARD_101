@@ -8,11 +8,77 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .kartu{
+                width: 500px;
+                height: 250px;
+                background-color: grey;
+                margin:auto;
+                padding-top: 20px;
+            }
+            
+            .gambar{
+                /*background-color: red;*/
+                width: 150px;
+                height: 150px;
+                margin-left: 20px;
+            }
+            
+            .namapanggilan{
+                width: 150px;
+                /*background-color: aqua;*/
+                margin-left: 20px;
+                text-align: center;
+            }
+            
+            .gambar img{
+                width: 100%;
+                height: 100%;
+            }
+            
+            .namalengkap{
+                width: 200px;
+                height: 20px;
+                /*background-color: green;*/
+                display: inline-block;
+                position: absolute;
+                margin-left:200px; 
+                margin-top: -170px;
+            }
+            
+            .tanggallahir{
+                width: auto;
+                height: 20px;
+                /*background-color: blue;*/
+                display: inline-block;
+                position: absolute;
+                margin-left:200px; 
+                margin-top: -130px;
+            }
+            
+        </style>
     </head>
     <body>
-        <p th:text="${nama}"/>
-        <p th:text="${panggilan}"/>
-        <p th:text="${tanggal}"/>
-        <img th:src="${fotoorang}"/>
+        
+        <div class="kartu">
+            
+            <div class="gambar">
+                <img th:src="${fotoorang}"/>
+            </div>
+            
+            <div class="namapanggilan">
+                <p th:text="${panggilan}"/>
+            </div>
+            
+            <div class="namalengkap">
+                <p th:text="${nama}"/>
+            </div>
+            
+            <div class="tanggallahir">
+                <p th:text="${tanggal}"/>
+            </div>
+            
+        </div>
+  
     </body>
 </html>
