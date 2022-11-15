@@ -38,7 +38,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <h1>CETAK ID CARD</h1>
         <p>Silahkan Masukkan Data Anda</p>
         <div class="main">
-            <form action="">
+            <form action="/input" method="POST" enctype="multipart/form-data">
                 <div class="namalengkap">
                     <label for="namalengkap">Nama Lengkap</label><input name="nmlngkp" id="namalengkap" type="text">
                 </div>
@@ -49,10 +49,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     <label for="tanggal">Tanggal Lahir</label><input name="tgl" id="tanggal" type="date">
                 </div>
                 <div class="foto">
-                    <label for="foto">Foto</label><input name="ft" id="foto" type="file">
+                    <label for="foto">Foto</label><input name="image" id="foto" type="file">
                 </div>
 
-                <input type="button" value="lihat" id="button">
+                <input type="submit" value="lihat" id="button">
             </form>
         </div>
     </body>
