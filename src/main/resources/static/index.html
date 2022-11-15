@@ -9,26 +9,47 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            p{
+            .namalengkap label{
+                margin-right: 40px;
+            }
+            .namapanggilan label{
+                margin-right: 32px;
+            }
+            .tanggal label{
+                margin-right: 48px;
+            }
+            .foto label{
+                margin-right:108px;
+            }
+            
+            input{
+                margin-bottom: 10px;
+            }
+            
+            #button{
                 display: inline-block;
+                width: 40px;
+                margin-left: 137px;
             }
         </style>
     </head>
     <body>
-        <form>
-            <div class="label">
-                <p>Nama</p>
-                <p>Nama Panggilan</p>
-                <p>Tanggal Lahir</p>
-                <p>Foto</p>
+        
+        <form action="">
+            <div class="namalengkap">
+                <label for="namalengkap">Nama Lengkap</label><input name="nmlngkp" id="namalengkap" type="text">
             </div>
-                
-            <div class="inputan">
-                <input type="text" name="nama">
-                <input type="text" name="namapanggilan">
-                <input type="date" name="tanggal">
-                <input type="file" name="foto">
+            <div class="namapanggilan">
+                <label for="namapanggilan">Nama Panggilan</label><input name="nmpgln" id="namapanggilan" type="text">
             </div>
+            <div class="tanggal">
+                <label for="tanggal">Tanggal Lahir</label><input name="tgl" id="tanggal" type="date">
+            </div>
+            <div class="foto">
+                <label for="foto">Foto</label><input name="ft" id="foto" type="file">
+            </div>
+            
+            <input type="button" value="lihat" id="button">
         </form>
     </body>
 </html>
